@@ -7,55 +7,72 @@
     <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <div class="wadah">
-        <div class="background">
-            <div class="bar_1">
-            </div>
-            <div class="bar_2">
-            </div>
-            <div class="bar_3">
-            </div>
-            <div class="bar_4">
-            </div>
+    <nav>
+        <a href="index.html" class="h1">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1>KOM-Info</h1>
+          </a>
+        <div>
+            <a href="#">
+                <img class="pp" src="gambar/PP.png" alt="My profile">
+            </a>
+            <a class="nama" href="#">Ernando Ari</a>
+            <a href="#">
+                <img class="panah" src="gambar/panah.png">
+            </a>
         </div>
-        <div class="navbar">
-            <img class="logobar" src="gambar/Logo rpl 1.png">
-            <ul class="bar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Kategori</a></li>
-                <li><a href="#">History</a></li>
-            </ul>
-            <input class="search" type="textbox" id="search" name="search" placeholder="Search...">   
-            <!-- <a href="#" class="search">Search</a> -->
-            <img class="profile" src="gambar/PP.png">
-            <a class="nama">Ernando Ari</a>
-        </div>
+    </nav>
+    <div class="back">
+        <a href="#">
+            <img src="gambar/back.png">
+        </a>
+        <a class="tulisan-back" href="#">
+            BACK
+        </a>
+    </div>
+    <div class="bungkus-main">    
         <div class="header">
-            <img class="lgHeader" src="gambar/Logo rpl 1.png" alt="">
-        </div>
-        <div class="row">
-            <div class="hrow">
-                <a class="kartu">Profil Saya</a>
-            </div>
-            <div class="bagian-kiri">
-                <img class="pp" src="gambar/PP.png">
-                <a class="knama">Ernando Ari</a>
-                <input type="submit" value="Hapus Foto" action="" method="">
-            </div>
-            <div class="bagian-kanan">
-                <form class="form_post" action="" method="">
-                    <label for="Username">Username</label>
-                    <input type="text" id="Username" name="Username" placeholder="Ernando Ari">
-                    <label for="Email">Email</label>
-                    <input type="text" id="Email" name="Email" placeholder="ernando ari@asd">
-                    <label for="Foto">Tambahkan foto profil yang baru</label>
-                        <input type="file" id="ChooseFile">
-                </form>
-                <div>
-                    <a class="Save">Save</a>
-                    <a class="Edit">Edit Profile</a>
-                </div>
-            </div>
+            <img class="logo" src="gambar/Logo rpl 1.png" alt="">
         </div>
     </div>
+    <div class="bungkus-h">
+        <div class="header">
+            <a>Profil saya</a>
+        </div>
+    </div>
+    <div class="bungkus-profile">    
+        <div class="profile">
+            <div class="wkiri">
+                <div class="pp">
+                        <img src="gambar/PP.png">
+                </div>
+                <div class="nama">
+                    <a>Ernando Ari</a>
+                </div>
+                <div class="hapus">
+                    <input type="submit" value="Hapus Akun" action="" method=""> 
+                </div>
+            </div>
+            <form class="form_post" action="" method="">
+                <label for="judul">Judul</label>
+                <input type="text" id="judul" name="judul" placeholder="Masukkan judul">
+                <label for="kategori">Kategori</label>
+                <input type="text" id="kategori" name="kategori" placeholder="Masukkan kategori">
+                <label for="konten">Konten</label>
+                <input type="text" id="konten" name="konten" placeholder="Masukkan konten">
+                <label for="Foto">Foto</label>
+                <input type="file" id="ChooseFile">
+            </form>
+        </div>
+    </div>
+    <div class="bungkus-b">
+        <div class="save">
+            <input type="submit" value="Save" action="" method="">
+        </div>
+        <div class="edit">
+            <input type="submit" value="Edit Profil" action="" method="">  
+        </div>    
+    </div>
 </body>
+</html>
