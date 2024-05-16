@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+}
+
+.background {
+    height: 100%c;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    position: relative;
+    transform: skewX(-20deg);
+    transform-origin: left;
+    flex-wrap: wrap;
+    
+    
+}
+
+.bar_1 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 74%;
+    width: 4%;
+    position: absolute;
+    display: inline-block;
+    opacity: 15%;
+    
+
+}
+
+.bar_2 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 65%;
+    width: 4%;
+    position: absolute;
+    opacity: 15%;
+
+}
+
+.bar_3 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 10%;
+    width: 4%;
+    position: absolute;
+    opacity: 15%;
+
+}
+
+.bar_4 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 1%;
+    width: 4%;
+    position: absolute;
+    opacity: 15%;
+
+}
+
+.row {
+    height: 550px;
+    width: 30%;
+    background-color: #FFFDF6;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    left: 37%;
+    top: 20%;
+    transform: translateX(-50%); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px 0px 0px 10px;
+    z-index: 1; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.login {
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color: #03485D;
+    max-width: 400px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.blogin {
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    color: #999999;
+    max-width: 400px;
+    text-align: center;
+    margin-top: -35px;
+}
+
+.form_login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    width: 70%;
+    text-align: left; 
+    margin-bottom: 5px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 70%;
+    height: 3rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #03485D;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #FCF6E3;
+}
+
+.ingat {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+
+}
+
+.lupa {
+    color: #03485D;
+    text-decoration: none;
+}
+
+.lupa {
+    text-decoration: underline;
+}
+input[type="submit"] {
+    background-color: #03485D;
+    color: #FCF6E3;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 70%;
+    box-sizing: border-box;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: greenyellow;
+}
+
+.belum {
+    width: 70%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin-top: -14px;
+
+}
+
+.daftar {
+    color: #03485D;
+    text-decoration: none;
+}
+
+.daftar {
+    text-decoration: underline;
+}
+
+.kanan {
+    height: 550px;
+    width: 22%;
+    background-color: #04485D;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    left: 63%;
+    top: 20%;
+    transform: translateX(-50%); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 10px 10px 0px;
+    z-index: 1; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.logo {
+    width: 100%;
+    position: absolute;
+}
+
+.hubungi {
+    width: 15%;
+    height: 5%;
+    position: absolute;
+    display: flex;
+    padding: 20px;
+    float: left;
+}
