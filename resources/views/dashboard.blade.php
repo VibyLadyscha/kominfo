@@ -91,7 +91,7 @@
                         <h6 class="card-subtitle mb-2 text-muted">{{ $post->category->category_detail }}</h6>
                         <h5 class="card-title">{{ $post->post_title }}</h5>
                         <p class="card-text">{{ Str::words($post->post_content, 20, '...') }}</p>
-                        <a href="{{ 'post/'.$post->id }}" class="btn btn-primary">Read More</a>
+                        <a href="{{ 'post/'.$post->id }}" class="btn btn-primary" style="background-color: #03485D">Read More</a>
                         <p class="card-text"><small class="text-body-secondary">Last updated {{ $post->updated_at->diffForHumans() }}</small></p>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                     <h6 class="card-subtitle mb-2 text-muted">{{ $post->category->category_detail }}</h6>
                     <h5 class="card-title">{{ $post->post_title }}</h5>
                     <p class="card-text">{{ Str::words($post->post_content, 20, '...') }}</p>
-                    <a href="{{ 'post/'.$post->id }}" class="btn" type="submit">Read More</a>
+                    <a href="{{ 'post/'.$post->id }}" class="btn btn-primary" style="background-color: #03485D">Read More</a>
                     <p class="card-text"><small class="text-body-secondary">Last updated {{ $post->updated_at->diffForHumans() }}</small></p>
                 </div>
             </div>
