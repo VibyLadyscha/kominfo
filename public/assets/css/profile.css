@@ -1,0 +1,268 @@
+*, html {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    height: 100%c;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    position: relative;
+    transform: skewX(-20deg);
+    transform-origin: left;
+    flex-wrap: wrap;
+    
+    
+}
+
+.bar_1 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 74%;
+    width: 4%;
+    position: absolute;
+    display: inline-block;
+    opacity: 15%;
+    
+
+}
+
+.bar_2 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 65%;
+    width: 4%;
+    position: absolute;
+    opacity: 15%;
+
+}
+
+.bar_3 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 10%;
+    width: 4%;
+    position: absolute;
+    opacity: 15%;
+
+}
+
+.bar_4 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 1%;
+    width: 4%;
+    position: absolute;
+    opacity: 15%;
+
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: .2rem;
+}
+
+.back img {
+    width: 40px;
+}
+
+.back a {
+    font-size: 20px;
+    font-weight: 2px;
+    text-decoration: none;
+    color: #03485D;
+    font-weight: 900;
+    display: flex;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid #ffffff00 ;
+}
+
+.back .tulisan-back:hover {
+    color: #000000;
+    border-bottom: 1px solid #03485D;
+}
+
+.header .logo {
+    display: flex;
+    height: 100px;
+}
+
+.bungkus-profile {
+    padding: 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bungkus-profile .profile {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: #FFFDF6;
+    width: 40%;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bungkus-h {
+    display: flex;
+    justify-content: center;
+    padding: 0 0;
+}
+
+.bungkus-h .headerr {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 65%;
+    height: 100px;
+    padding: 0px 0px;
+    background-color: #03485D;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bungkus-h .headerr h4 {
+    font-size: 1.5rem;
+    color: #FFFDF6;
+    padding: 1.5rem;
+}
+
+.bungkus-profile {
+    padding: 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bungkus-profile .profile {
+    display: flex;
+    justify-content: left;
+    background-color: #FFFDF6;
+    width: 65%;
+    height: 350px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile .wkiri {
+    display: flex;
+    width: 30%;
+    padding: 0;
+    padding: 1rem 1rem 0px 1rem;
+    justify-content: center;
+}
+
+.profile .pp {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    position: relative;
+}
+
+.profile .pp img {
+    display: flex;
+    width: 95%;
+    height: 105%;  
+}
+
+.profile .hapus {
+    position: absolute;
+    display: flex;
+    padding: 14rem 1rem 0rem 1rem;
+}
+
+.form_post {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+}
+
+label {
+    text-align: left; 
+    margin-bottom: 6px; 
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+small {
+    margin-left: 20px;
+    font-size: 0.8rem;
+}
+
+input[type="text"],
+input[type="text"],
+input[type="text"],
+textarea {
+    width: 100%;
+    height: 3rem;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border: 2px solid #03485D;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #FCF6E3;
+    font-size: 18px;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 1rem 7rem 1rem 1rem;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    border: 2px solid #03485D;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #FCF6E3;
+    font-size: 11px;
+}
+
+.bungkus-b {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.bungkus-b input[type="submit"]{
+    color: #FCF6E3;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    border: 1px solid #dddd;
+    margin-right: 1rem;
+}
+
+.bungkus-b .save input[type="submit"]{
+    background-color: #00a6f3;
+}
+
+.bungkus-b .edit input[type="submit"]{
+    background-color: #FF2C2C;
+}
+
+.navbar {
+    background: #03485D;
+    height: 80px;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.logo {
+    display: flex;
+    width: 9%;
+
+}

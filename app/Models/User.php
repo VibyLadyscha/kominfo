@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class User extends Authenticatable
 {
@@ -59,6 +60,6 @@ class User extends Authenticatable
     // Relationship dengan PostHistory
     public function postHistories(): HasOne
     {
-        return $this->hasOne(PostHistory::class, 'post_history_id', 'id');
+        return $this->hasOne(PostHistory::class);
     }
 }

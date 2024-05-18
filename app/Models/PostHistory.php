@@ -27,11 +27,4 @@ class PostHistory extends Model
     {
         return $this->hasMany(Post::class, 'post_history_id', 'id');
     }
-
-    // Relationship dengan Temporary
-    public function temporaries(): HasOne
-    {
-        return $this->hasOne(Temporary::class, 'temporary_id', 'id');
-    }
-
 }

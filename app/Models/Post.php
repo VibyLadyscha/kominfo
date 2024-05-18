@@ -53,10 +53,4 @@ class Post extends Model
         return $this->belongsTo(Category::class, 'category_id', 'id');
     }
 
-    // Relationship dengan Temporary
-    public function temporaries(): BelongsTo
-    {
-        return $this->belongsTo(Temporary::class, 'post_history_id', 'id');
-    }
-
 }

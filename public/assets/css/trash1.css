@@ -134,8 +134,53 @@ a {
 
 .content {
     position: relative;
-    margin-top: 80px;
+    margin-top: 10px;
     margin-right: 150px;
     left: 60px;
     overflow-x: auto;
+}
+
+input[type="submit"] {
+    background-color: #03485D;
+    color: #FCF6E3;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 90%;
+    box-sizing: border-box;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(66, 94, 24);
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: .2rem;
+}
+
+.back img {
+    width: 40px;
+}
+
+.back a {
+    font-size: 20px;
+    font-weight: 2px;
+    text-decoration: none;
+    color: #03485D;
+    font-weight: 900;
+    display: flex;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid #ffffff00 ;
+}
+
+.back .tulisan-back:hover {
+    color: #000000;
+    border-bottom: 1px solid #03485D;
 }

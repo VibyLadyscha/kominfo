@@ -19,7 +19,7 @@
         </div>
         <div class="bar_4">
         </div>
-    </div>
+</div>
     
     <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
@@ -108,7 +108,7 @@
                     <h6 class="card-subtitle mb-2 text-muted">{{ $post->category->category_detail }}</h6>
                     <h5 class="card-title">{{ $post->post_title }}</h5>
                     <p class="card-text">{{ Str::words($post->post_content, 20, '...') }}</p>
-                    <a href="{{ 'post/'.$post->id }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ 'post/'.$post->id }}" class="btn" type="submit">Read More</a>
                     <p class="card-text"><small class="text-body-secondary">Last updated {{ $post->updated_at->diffForHumans() }}</small></p>
                 </div>
             </div>
@@ -119,6 +119,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="../assets/js/garis.js"></script>
 
 </body>
 </html>

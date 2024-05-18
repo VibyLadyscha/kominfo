@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use App\Models\PostHistory;
+use App\Models\Post;
 
 class ProfileController extends Controller
 {
@@ -104,7 +105,12 @@ class ProfileController extends Controller
     {
         // validasi user dan post history
         $user = User::find($id);
-        $post_history = PostHistory::where('user_id', $user->id)->first();
+        $post_histories = PostHistory::find($user->id);
+
+        // hapus post yang terkait dengan post_history ini
+        foreach ($post_histories as $post_history) {
+            $posts = Post::where('user_id', $user->id)->where('post_history_id', $post_history->id)->delete();
+        }
 
         // hapus image dari folder
         Storage::delete($user->profile_picture);
@@ -112,19 +118,12 @@ class ProfileController extends Controller
         // hapus komentar user
         $user->comments()->delete();
 
-        // set post_history_id menjadi null dan hapus post user
-        foreach ($user->posts as $post) {
-        $post->post_history_id = null;
-        $post->save();
-        $post->delete();
-        }
+        // // hapus posts yang terkait dengan post_history ini
+        // $posts = Post::where('user_id', $user->id)->where('post_histories_id', $post_histories->id)->delete();
 
-        // hapus post history user
-        if ($post_history) {
-            $post_history->delete();
-        }
-
-        // MASIH ERROR CUYYY
+        // kemudian hapus post_history ini
+        $post_histories->delete();
+        // // MASIH ERROR CUYYY
 
         // hapus user
         $user->delete();
