@@ -84,13 +84,17 @@
       <div class="row">
         @foreach ($posts->sortByDesc('created_at') as $post)
             @if($post->post_image)
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12 d-flex">
                 <div class="card ms-5 mb-3 mt-3 shadow-sm d-flex flex-column" style="width: 28rem;">
                     <img src="{{ asset($post->post_image) }}" class="card-img-top img-fluid" style="object-fit: cover; height: 200px;" alt="{{ $post->post_title }}">
-                    <div class="card-body">
+                    <div class="card-body" style="flex-grow: 1">
                         <h6 class="card-subtitle mb-2 text-muted">{{ $post->category->category_detail }}</h6>
                         <h5 class="card-title">{{ $post->post_title }}</h5>
                         <p class="card-text">{{ Str::words($post->post_content, 20, '...') }}</p>
+                        <!-- @php
+                          $isContentFull = Str::words($post->post_content, 20, '...') === $post->post_content;
+                        @endphp -->
+                        <!-- <a href="{{ 'post/'.$post->id }}" class="btn btn-primary {{ !$isContentFull ? '' : 'mt-5' }}" style="background-color: #03485D">Read More</a> -->
                         <a href="{{ 'post/'.$post->id }}" class="btn btn-primary" style="background-color: #03485D">Read More</a>
                         <p class="card-text"><small class="text-body-secondary">Last updated {{ $post->updated_at->diffForHumans() }}</small></p>
                     </div>
