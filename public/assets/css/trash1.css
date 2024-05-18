@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body {
+    
+} */
+
+.background {
+    background: #999999;
+    height: auto;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    position: relative;
+    transform: skewX(-20deg);
+    transform-origin: left;
+    flex-wrap: wrap;
+}
+
+.bar_1 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 74%;
+    width: 4%;
+    position: absolute;
+    display: inline-block;
+    opacity: 15%;
+    
+
+}
+
+.bar_2 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 65%;
+    width: 4%;
+    position: absolute;
+    opacity: 15%;
+
+}
+
+.bar_3 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 10%;
+    width: 4%;
+    position: absolute;
+    opacity: 15%;
+
+}
+
+.bar_4 {
+    display: flex;
+    background: #999999;
+    height: 100vh;
+    right: 1%;
+    width: 4%;
+    position: absolute;
+    opacity: 15%;
+
+}
+
+.navbar {
+    background: #03485D;
+    height: 80px;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.logo {
+    display: flex;
+    width: 9%;
+
+}
+
+.barr {
+	display: flex;
+	list-style: none;
+	padding: 0;	
+    margin-left: 7%;
+    		
+}
+
+.bar li {
+    padding-left: 0;
+    margin-right: 10px;
+    color: white;
+    font-size: 1em;
+}
+
+.bar li a {
+    padding: 10px;
+	text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+.search {
+    font-size: .7em;
+    margin-left: 30%;
+    background: #03485D;
+    border: 1px solid #8D9DB5;
+    color: #8D9DB5;
+    border-radius: 16px;
+    padding: .6rem ;
+    padding-right: 7rem;
+    padding-left: 2rem;
+}
+
+.profile {
+    margin-left: 8.5%;
+}
+
+.nama {
+    font-size: 1.3em;
+    margin-left: 1%;
+    
+}
+
+.table {
+    border-collapse: collapse;
+    background-color: grey;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+.content {
+    position: relative;
+    margin-top: 80px;
+    margin-right: 150px;
+    left: 60px;
+    overflow-x: auto;
+}

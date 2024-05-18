@@ -23,4 +23,12 @@ class DashboardController extends Controller
         return view('kategori', compact('posts', 'categories', 'category_id'));
     }
 
+    public function search(Request $request)
+    {
+        $query = $request->search;
+        $posts = Post::where('post_title', 'LIKE', "%{$query}%")->get();
+        $categories = Category::all();
+        return view('search', compact('posts', 'categories', 'query'));
+    }
+
 }

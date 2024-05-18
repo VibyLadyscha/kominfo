@@ -124,7 +124,7 @@ class ProfileController extends Controller
             $post_history->delete();
         }
 
-        // MASIH ERROR CUY
+        // MASIH ERROR CUYYY
 
         // hapus user
         $user->delete();

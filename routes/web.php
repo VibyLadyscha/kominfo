@@ -36,6 +36,7 @@ Route::post('/logout', [SessionController::class, 'logout']);
 
 // Masuk ke dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
+Route::get('/dashboard/search', [DashboardController::class, 'search'])->name('dashboard.search')->middleware('auth');
 Route::get('/category/{category:id}', [DashboardController::class, 'category'])->name('category');
 
 // Trash Post
