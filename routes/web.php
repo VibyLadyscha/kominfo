@@ -46,7 +46,7 @@ Route::delete('/post/kill/{post:id}', [PostController::class, 'kill'])->name('po
 
 // CRUD Post
 Route::resource('/post', PostController::class)->middleware('auth');
-Route::get('/post/{post:id}', [PostController::class, 'show'])->middleware('auth');
+Route::get('/post/{post:id}', [PostController::class, 'show'])->middleware('auth')->name('post.show');
 
 // CRUD Comment
 Route::resource('/comment', CommentController::class)->middleware('auth');
