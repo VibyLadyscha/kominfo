@@ -105,7 +105,7 @@
                 <p class="card-text">{{ $comment->comment_content }}</p>
                 @endforeach
             </div>
-            <a href="{{ route('comment.create', ['post' => $post->id]) }}" class="btn btn-primary">Create Comment</a>
+            <a href="{{ route('comment.create', ['post' => $post->id]) }}" class="btn btn-primary" style="background-color: #03485D">Create Comment</a>
         </div>
     </div>
 </div>
