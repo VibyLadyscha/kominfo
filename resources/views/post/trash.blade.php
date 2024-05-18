@@ -72,6 +72,11 @@
 
 
     <div class="content">
+      @if($posts->isEmpty())
+      <div class="text-center mt-3">
+        <h4><strong class="text-black">Anda tidak memiliki riwayat penghapusan postingan.</strong></h4>
+      </div>
+      @else
         <table class="table table-striped table-bordered">
             <thead>
               <tr>
@@ -112,6 +117,7 @@
     </div>
 
 <h5 style="margin-left: 60px">Total: {{ count($posts) }} </h5> <br>
+@endif
 <a href="{{ url('posthistory') }}" class="btn btn-primary" style="margin-left: 60px">Back</a>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

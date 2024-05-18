@@ -70,7 +70,7 @@
   @foreach ($posts as $post)
     <div class="card mb-3 mx-auto mt-3" style="width: 50rem;">
       @isset($post->post_image)
-        <img src="{{ asset($post->post_image) }}" class="card-img-top" alt="{{ $post->post_title }}" style="width: 50rem;">
+        <img src="{{ asset($post->post_image) }}" class="card-img-top img-fluid" style="object-fit: cover; height: 200px;" alt="{{ $post->post_title }}" style="width: 50rem;">
       @endisset
       <div class="card-body">
         <h6 class="card-subtitle mb-2 text-muted">{{ $post->category->category_detail }}</h6>

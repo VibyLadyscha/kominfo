@@ -182,7 +182,7 @@ class PostController extends Controller
 
     public function trash()
     {
-        $posts = Post::onlyTrashed()->get();
+        $posts = Post::onlyTrashed()->where('user_id', Auth::user()->id)->get();
         $categories = Category::all();
         return view('post.trash', compact('posts', 'categories'));
     }
