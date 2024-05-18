@@ -85,7 +85,7 @@
         @foreach ($posts->sortByDesc('created_at') as $post)
             @if($post->post_image)
             <div class="col-md-6 col-sm-12">
-                <div class="card ms-5 mb-3 mt-3 shadow-sm d-flex flex-column" style="width: 20rem;">
+                <div class="card ms-5 mb-3 mt-3 shadow-sm d-flex flex-column" style="width: 28rem;">
                     <img src="{{ asset($post->post_image) }}" class="card-img-top img-fluid" style="object-fit: cover; height: 200px;" alt="{{ $post->post_title }}">
                     <div class="card-body">
                         <h6 class="card-subtitle mb-2 text-muted">{{ $post->category->category_detail }}</h6>
@@ -103,7 +103,7 @@
     <div class="col-md-3">
         @foreach ($posts->sortByDesc('created_at') as $post)
             @if(!$post->post_image)
-            <div class="card mb-3 mt-3 shadow-sm" style="width: 15rem;">
+            <div class="card ms-5 mb-3 mt-3 shadow-sm" style="width: 15rem;">
                 <div class="card-body">
                     <h6 class="card-subtitle mb-2 text-muted">{{ $post->category->category_detail }}</h6>
                     <h5 class="card-title">{{ $post->post_title }}</h5>
