@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/login.css">
+    <link href="../assets/img/logo-rpl.ico" rel="icon">
     <title>Login</title>
 </head>
 <body>
