@@ -178,9 +178,9 @@
         </div>
     </div>
     </form>
-        <div class="edit">
+        <!-- <div class="edit">
             <input type="submit" value="Hapus Akun" action="" method="">  
         </div>    
-    </div>
+    </div> -->
 </body>
 </html>

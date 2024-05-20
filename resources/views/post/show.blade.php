@@ -20,7 +20,7 @@
             <a class="nav-link" aria-current="page" href="{{ url('dashboard') }}">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Kategori
             </a>
             <ul class="dropdown-menu">
@@ -59,7 +59,7 @@
 
 <div class="row">
     <div class="col">
-        <div class="card mb-3 ms-3 mt-3" style="width: 50rem;">
+        <div class="card mb-3 ms-5 mt-3" style="width: 50rem;">
         @isset($post->post_image)
         <img src="{{ asset($post->post_image) }}" class="card-img-top" alt="{{ $post->post_title }}" style="width: 50rem;">
         @endisset

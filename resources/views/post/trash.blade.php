@@ -110,7 +110,7 @@
         <form action="{{ route('post.kill', $post->id) }}" method="POST" style="display: inline">
           @csrf
           @method('DELETE')
-          <button type="submit" class="btn btn-danger btn-sm">
+          <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this post?')">
             <i class="bi bi-trash"></i>
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                 <path d="M5.5 5.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1h3.5V5H6a.5.5 0 0 1-.5-.5z"/>

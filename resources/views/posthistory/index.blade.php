@@ -133,7 +133,7 @@
 
 <h5 style="margin-left: 60px">Total: {{ count($posts) }} </h5> <br>
 @endif
-<a href="{{ route('post.trash') }}" class="btn btn-danger" style="margin-left: 60px">Trash</a>
+<a href="{{ route('post.trash') }}" class="btn btn-primary" style="margin-left: 60px; background-color: #03485D;">Trash</a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
