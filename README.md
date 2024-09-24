@@ -1,1 +1,3 @@
-# kominfo
+# Kominfo
+
+KOM-Info adalah sebuah website sumber informasi bagi mahasiswa ilmu komputer dimana pengguna dapat membuat akun untuk memposting suatu informasi atau berita. Tujuan dari pengembangan KOM-Info adalah untuk membantu mahasiswa ilmu komputer dalam mendapatkan informasi penting agar tidak ketinggalan informasi dan memudahkan mahasiswa ilmu komputer dalam mencari informasi yang dibutuhkan untuk menunjang perkuliahan. Selain dapat memposting informasi, pengguna juga dapat melihat informasi yang diunggah oleh pengguna lain, melakukan edit postingan, menghapus postingan, dan mengomentari postingan lain. Adapun informasi atau berita yang dimaksud dapat berupa rangkuman materi kuliah, informasi beasiswa, perlombaan, maupun informasi lain seputar ilmu komputer yang dapat dicari dengan menggunakan fitur filter sesuai dengan topik pembahasan artikel tersebut. 
